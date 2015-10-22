@@ -3,8 +3,8 @@ create "ACRCloud Fingerprint" by Audio/Video file, and use "ACRCloud Fingerprint
 
 # Overview
 This module can recognize ACRCloud by most of audio/video file.<br>
-      Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...<br>
-      Video: mp4, mkv, wmv, flv, ts, avi ...
+>>>>Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...<br>
+>>>>Video: mp4, mkv, wmv, flv, ts, avi ...
       
 # Functions
 Introduction all API.
@@ -27,36 +27,36 @@ class ACRCloudRecognizer:
 ```
 ## Module acrcloud_extr_tool
 ```python
-      create_fingerprint_by_file(file_name, start_time_seconds, audio_len_seconds, is_db_fingerprint):
-         #file_name: Path of input file; 
-         #start_time_seconds: Start time of input file, default is 0; 
-         #audio_len_seconds: Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not usefully; 
-         #is_db_fingerprint: If it is True, it will create db frigerprint; 
+def create_fingerprint_by_file(file_name, start_time_seconds, audio_len_seconds, is_db_fingerprint):
+      #file_name: Path of input file; 
+      #start_time_seconds: Start time of input file, default is 0; 
+      #audio_len_seconds: Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not usefully; 
+      #is_db_fingerprint: If it is True, it will create db frigerprint; 
 
-     create_fingerprint_by_filebuffer(data_buffer, start_time_seconds, audio_len_seconds, is_db_fingerprint):
-         #data_buffer: data buffer of input file; 
-         #start_time_seconds: Start time of input file, default is 0; 
-         #audio_len_seconds: Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not usefully; 
-         #is_db_fingerprint: If it is True, it will create db frigerprint; 
+def create_fingerprint_by_filebuffer(data_buffer, start_time_seconds, audio_len_seconds, is_db_fingerprint):
+      #data_buffer: data buffer of input file; 
+      #start_time_seconds: Start time of input file, default is 0; 
+      #audio_len_seconds: Length of audio data you need. if you create recogize frigerprint, default is 12 seconds, if you create db frigerprint, it is not usefully; 
+      #is_db_fingerprint: If it is True, it will create db frigerprint; 
 
-     create_fingerprint(data_buffer, is_db_fingerprint):
-         #data_buffer: audio data buffer(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
-         #is_db_fingerprint: If it is True, it will create db frigerprint; 
+def create_fingerprint(data_buffer, is_db_fingerprint):
+      #data_buffer: audio data buffer(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
+      #is_db_fingerprint: If it is True, it will create db frigerprint; 
 
-     decode_audio_by_file(file_name, start_time_seconds, audio_len_seconds):
-         #It will return the audio data(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
-             #file_name: Path of input file; 
-             #start_time_seconds: Start time of input file, default is 0; 
-             #audio_len_seconds: Length of audio data you need, if it is 0, will decode all the audio; 
+def decode_audio_by_file(file_name, start_time_seconds, audio_len_seconds):
+      #It will return the audio data(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
+      #file_name: Path of input file; 
+      #start_time_seconds: Start time of input file, default is 0; 
+      #audio_len_seconds: Length of audio data you need, if it is 0, will decode all the audio; 
 
-     decode_audio_by_filebuffer(data_buffer, start_time_seconds, audio_len_seconds):
-         #It will return the audio data(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
-             #data_buffer: data buffer of input file; 
-             #start_time_seconds: Start time of input file, default is 0; 
-             #audio_len_seconds: Length of audio data you need, if it is 0, will decode all the audio; 
+def decode_audio_by_filebuffer(data_buffer, start_time_seconds, audio_len_seconds):
+      #It will return the audio data(RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz); 
+      #data_buffer: data buffer of input file; 
+      #start_time_seconds: Start time of input file, default is 0; 
+      #audio_len_seconds: Length of audio data you need, if it is 0, will decode all the audio; 
 
-     version() 
-         #return the version of this module
+def version() 
+      #return the version of this module
 ```
 # Example
 run Test: python test.py test.mp3
