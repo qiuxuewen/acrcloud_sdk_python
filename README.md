@@ -11,8 +11,8 @@ Introduction all API.
 ## recognizer.py
 ```c
 recognize_by_file(file_path, start_seconds)
-```
       @param file_path : query file path <br>
       @param start_seconds : skip (start_seconds) seconds from from the beginning of (filePath) <br>
       @return result metainfos <br>
+```
 
