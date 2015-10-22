@@ -72,7 +72,7 @@ if __name__ == '__main__':
         'host':'ap-southeast-1.api.acrcloud.com',
         'access_key':'XXXXXXXX', #Replace "xxxxxxxx" below with your project's access_key and access_secret.
         'access_secret':'XXXXXXXX',
-        'timeout':10
+        'timeout':10 # seconds
     }
 
     '''This module can recognize ACRCloud by most of audio/video file. 
