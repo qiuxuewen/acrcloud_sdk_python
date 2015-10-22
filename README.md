@@ -9,7 +9,9 @@ This module can recognize ACRCloud by most of audio/video file.
 # Functions
 Introduction all API.
 ## recognizer.py
-1. recognize_by_file(file_path, start_seconds) <br>
+```c
+recognize_by_file(file_path, start_seconds)
+```
       @param file_path : query file path <br>
       @param start_seconds : skip (start_seconds) seconds from from the beginning of (filePath) <br>
       @return result metainfos <br>
