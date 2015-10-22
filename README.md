@@ -2,8 +2,8 @@
 create "ACRCloud Fingerprint" by Audio/Video file, and use "ACRCloud Fingerprint" to recognize metainfos by "ACRCloud webapi".
 
 # Overview
-This module can recognize ACRCloud by most of audio/video file.
-      Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...
+This module can recognize ACRCloud by most of audio/video file.<br>
+      Audio: mp3, wav, m4a, flac, aac, amr, ape, ogg ...<br>
       Video: mp4, mkv, wmv, flv, ts, avi ...
       
 # Functions
@@ -59,6 +59,7 @@ class ACRCloudRecognizer:
          #return the version of this module
 ```
 # Example
+run Test: python test.py test.mp3
 ```python
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
